@@ -17,8 +17,7 @@ def test_mbpp_range(start_idx=0, end_idx=3, debug=False):
     # Setup logging
     logging.basicConfig(
         level=logging.DEBUG if debug else logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        datefmt='%Y-%m-%d %H:%M:%S',
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         handlers=[
             logging.FileHandler(log_file),
             # logging.StreamHandler()  # Also output to console
